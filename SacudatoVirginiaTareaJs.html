@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Virginia Sacudato JSON</title>
+<script>
+    //JSON
+    const alumno = {
+    nombre: "Virginia",
+    apellido: "Sacudato",
+    apodo: "Vir",
+    edad: 17,
+    sexo: "femenino",
+    nacionalidad: "argentina",
+    nacimiento: "17-01-2003",
+    profesion: "Tecnica IPP",
+    hobbies: [
+        {actividad:"leer libros", genero:["filosofia", "teología", "computer sciences👾"], },
+        {actividad:"escuchar música", genero:"rock", subgeneros:["punk rock", "black metal", "rockabilly"], },
+    ],
+    comidasfavoritas: [
+        {comida:"Pizza", sabor: "salado", lugar_de_origen: "Italia",},
+        {comida:"Shawarma", sabor:"salado", lugar_de_origen: "Imperio Otomano",},
+        {postre: "Pastafrola", sabor: "dulce", lugar_de_origen: "Argentina",},
+    ],
+    }
+for (let i = 0; i < alumno.hobbies.length; i++) {
+    document.write(`Hobbies: ${alumno.hobbies[i].actividad}`);
+    }
+    document.write(`Mi nombre es ${alumno.nombre} y mi apellido es ${alumno.apellido}, soy ${alumno.nacionalidad} nací el ${alumno.nacimiento} por lo tanto tengo ${alumno.edad} años.`);
+    document.write(`Me dicen ${alumno.apodo}`);
+
+    
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

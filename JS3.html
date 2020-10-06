@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ejercicio 3 - Virginia Sacudato</title>
+</head>
+<body>
+<script>
+//Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+// a) La cantidad de valores negativos ingresados.
+// b) La cantidad de valores positivos ingresados.
+// c) La cantidad de múltiplos de 15.
+// d) El valor acumulado de los números ingresados que son pares.
+var total=0;
+const numeros=[];
+ var numnegative=0; 
+ var numpositive=0;
+ var multi15=0;
+ var numpar=0;
+for (let i = 0; i < 10; i++) {
+    var inputnum=parseInt(prompt(`Ingresa el valor ${i+1}`));
+   numeros.push(inputnum);
+   numeros[i]>0 ? numpositive++ : numnegative++;
+   numeros[i]% 15 == 0 ? multi15++ : "";
+   numeros[i]% 2  == 0 ? numpar++ : "";
+}
+console.log(numeros);
+document.write (`La cantidad de numeros negativos son ${numnegative} y la cantidad de numeros positivos son ${numpositive}`); 
+document.write (`La cant de multiplos de 15 son ${multi15}`);
+document.write (`La cantidad de numeros pares son ${numpar}`);
+
+</script>
+</body>
+</html>

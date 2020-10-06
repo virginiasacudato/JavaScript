@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ejercicio 5 - Virginia Sacudato</title>
+</head>
+<body>
+<script>
+    //Desarrollar un programa que permita cargar 5 números enteros y luego nos informe cuántos valores fueron pares y cuántos impares.
+//Emplear el operador "%" en la condición de la estructura condicional.
+numeros=[];
+var numpar=0;
+var numimpar=0;
+for (let i = 0; i <= 4; i++) {
+    var numero= parseInt(prompt(`Ingresa el ${i+1}`));
+    numeros.push(numero);
+    numeros[i] % 2 == 0 ? numpar++ : numimpar++;
+    }
+    console.log(numeros);
+    document.write(`La cantidad de valores pares son ${numpar} y la cantidad de impares son ${numimpar}`);
+</script>
+</body>
+</html>
